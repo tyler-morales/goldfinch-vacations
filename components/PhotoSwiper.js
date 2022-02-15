@@ -32,15 +32,15 @@ export default function PhotoSwiper({images}) {
       {images.map((image, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="px-4 pb-16 swiper-slide">
+            <div className="px-4 md:pb-16 swiper-slide">
               <figure className="w-full h-auto">
                 <Image
                   layout="responsive"
                   src={image.url}
                   alt={image.alt}
                   width={400}
-                  height={250}
-                  className="object-cover w-full h-auto rounded-md bg-gray"
+                  height={image.position == 'vertical' ? 600 : 300}
+                  className="object-cover object-center w-full h-auto rounded-md bg-gray"
                 />
                 <figcaption className="px-4 mt-4 text-center dark:text-white">
                   {image.alt}

@@ -15,12 +15,12 @@ export default function Hero() {
           Southwest Michigan
         </p>
         {/* <span className="block text-sm text-center">Visit</span> */}
-        <div className="flex items-center justify-center gap-4 mt-8">
+        <div className="flex items-center justify-center gap-4 mt-16">
           <a
             href="https://www.airbnb.com/rooms/48884474?preview_for_ml=true&source_impression_id=p3_1644869232_F11AuBXqNcFC5inH"
             rel="noreferrer"
             target="_blank"
-            className="transition-all hover:-translate-y-1 px-4 py-2 text-xl font-bold rounded-md bg-secondary w-[120px] text-center">
+            className="transition-all hover:-translate-y-1 py-4 text-xl font-bold rounded-md bg-secondary w-[140px] text-center">
             AirBnb
           </a>
           <span className="dark:text-gray">Or</span>
@@ -28,14 +28,14 @@ export default function Hero() {
             href="https://www.vrbo.com/2586981?unitId=3157337"
             rel="noreferrer"
             target="_blank"
-            className="transition-all hover:-translate-y-1 px-4
-            py-2 text-xl font-bold rounded-md bg-secondary w-[120px]
+            className="transition-all hover:-translate-y-1
+            py-4 text-xl font-bold rounded-md bg-secondary w-[140px]
             text-center">
             {' '}
             Vrbo
           </a>
         </div>
-        <figure className="w-full mt-8">
+        <figure className="w-full mt-16">
           <Image
             layouts="responsive"
             src={HeroImage}

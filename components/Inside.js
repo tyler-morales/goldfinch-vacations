@@ -87,18 +87,22 @@ const bathrooms = [
   {
     url: '/../public/images/kissman/bathrooms/01.jpg',
     alt: 'Bathroom #1: Private full bathroom (2 sinks, bath, and shower) for Bedroom #1',
+    position: 'vertical',
   },
   {
     url: '/../public/images/kissman/bathrooms/02.jpg',
     alt: 'Bathroom #5: Private full bathroom for Bedroom #6 (view 1/2)',
+    position: 'vertical',
   },
   {
     url: '/../public/images/kissman/bathrooms/04.jpg',
     alt: 'Bathroom #5: Private full bathroom for Bedroom #6 (view 2/2)',
+    position: 'vertical',
   },
   {
     url: '/../public/images/kissman/bathrooms/05.jpg',
     alt: 'Bathroom #4 Full bathroom (basement)',
+    position: 'vertical',
   },
 ]
 
