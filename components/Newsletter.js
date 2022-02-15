@@ -1,14 +1,22 @@
 import {useState} from 'react'
 import Layout from './Layout'
+import axios from 'axios'
 
 export default function Newsletter() {
   const [email, setEmail] = useState('')
   const [success, setSuccess] = useState('')
 
-  const submitNewsletter = (e) => {
+  const submitNewsletter = async (e) => {
     e.preventDefault()
     setSuccess(true)
-    setEmail('')
+
+    try {
+      const response = await axios.post('/api/newsletter', {email})
+      console.log('Success')
+      setEmail('')
+    } catch (e) {
+      console.error('Error', e)
+    }
   }
   return (
     <section className="m-auto">
