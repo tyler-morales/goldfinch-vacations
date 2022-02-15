@@ -28,7 +28,7 @@ export default function PhotoSwiper({images}) {
         },
       }}
       modules={[Pagination, Navigation]}
-      className="w-full h-auto ">
+      className="w-full h-auto">
       {images.map((image, index) => {
         return (
           <SwiperSlide key={index}>
