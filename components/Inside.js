@@ -20,7 +20,7 @@ const living_areas = [
   },
   {
     url: '/../public/images/kissman/living_areas/05.jpg',
-    alt: 'Basement family room with 70" TV (view 2/2)',
+    alt: 'Basement family room with 70in. TV (view 2/2)',
   },
   {
     url: '/../public/images/kissman/living_areas/06.jpg',
@@ -40,15 +40,15 @@ const living_areas = [
   },
   {
     url: '/../public/images/kissman/living_areas/10.jpg',
-    alt: 'Basement family room with 70" TV (view 2/2)',
+    alt: 'Test 1',
   },
   {
     url: '/../public/images/kissman/living_areas/11.jpg',
-    alt: 'Basement family room with 70" TV (view 1/2)',
+    alt: '2',
   },
   {
     url: '/../public/images/kissman/living_areas/12.jpg',
-    alt: 'Game room #2',
+    alt: 'Game room 2',
   },
 ]
 
@@ -91,7 +91,7 @@ const bathrooms = [
   },
   {
     url: '/../public/images/kissman/bathrooms/02.jpg',
-    alt: 'Bathroom #5: Private full bathroom for Bedroom #6 (view 1/2)',
+    alt: 'Bathroom #2: Private full bathroom for Bedroom #6 (view 1/2)',
     position: 'vertical',
   },
   {
