@@ -9,14 +9,12 @@ import Image from 'next/image'
 import img1 from '../public/images/front.jpg'
 
 export default function PhotoSwiper({images}) {
-  console.log(images)
   const [screenWidth, setScreenWidth] = useState(0)
   const [numOfSlides, setNumOfSlides] = useState(1)
 
   useEffect(() => {
     const changeWidth = () => {
       setScreenWidth(window.innerWidth)
-      console.log(screenWidth)
       if (screenWidth < 640) setNumOfSlides(1)
       if (screenWidth > 640 && screenWidth < 768) setNumOfSlides(2)
       if (screenWidth > 768) setNumOfSlides(3)
@@ -55,7 +53,7 @@ export default function PhotoSwiper({images}) {
       className="swiper">
       {images.map((image, index) => {
         return (
-          <SwiperSlide key="index">
+          <SwiperSlide key={index}>
             <div className="swiper-slide">
               <figure className="w-full h-auto">
                 <Image
