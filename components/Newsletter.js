@@ -38,16 +38,16 @@ export default function Newsletter() {
 
         {/* form */}
         <form onSubmit={submitNewsletter} className="mt-12">
-          <div className="relative flex items-center justify-end ">
+          <div className="relative flex flex-col items-center justify-end gap-4 md:flex-row md:gap-0">
             <input
               type="email"
               required
               value={email}
-              className="block w-full p-6 text-lg rounded-md"
+              className="block w-full p-4 text-lg rounded-md md:p-6"
               placeholder="email"
               onChange={(e) => setEmail(e.target.value)}
             />
-            <button className="absolute p-3 mr-6 text-lg font-bold rounded-md bg-secondary">
+            <button className="w-full p-3 font-bold rounded-md md:w-auto md:mr-6 md:absolute md:text-lg bg-secondary">
               {success ? 'Joined' : 'Join Newsletter'}
             </button>
           </div>
