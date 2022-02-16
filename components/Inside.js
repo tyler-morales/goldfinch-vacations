@@ -20,7 +20,7 @@ const living_areas = [
   },
   {
     url: '/images/kissman/living_areas/05.jpg',
-    alt: 'Basement family room with 70in. TV (view 2/2)',
+    alt: 'Main living room upstairs',
   },
   {
     url: '/images/kissman/living_areas/06.jpg',
@@ -40,15 +40,15 @@ const living_areas = [
   },
   {
     url: '/images/kissman/living_areas/10.jpg',
-    alt: 'Test 1',
+    alt: 'Basement family room with 70" TV (view 1/2)',
   },
   {
     url: '/images/kissman/living_areas/11.jpg',
-    alt: '2',
+    alt: 'Basement family room with 70" TV (view 2/2)',
   },
   {
     url: '/images/kissman/living_areas/12.jpg',
-    alt: 'Game room 2',
+    alt: 'Game room #2',
   },
 ]
 
@@ -85,23 +85,23 @@ const beds = [
 
 const bathrooms = [
   {
-    url: '/../public/images/kissman/bathrooms/01.jpg',
+    url: '/images/kissman/bathrooms/01.jpg',
     alt: 'Bathroom #1: Private full bathroom (2 sinks, bath, and shower) for Bedroom #1',
     position: 'vertical',
   },
   {
-    url: '/../public/images/kissman/bathrooms/02.jpg',
+    url: '/images/kissman/bathrooms/02.jpg',
     alt: 'Bathroom #2: Private full bathroom for Bedroom #6 (view 1/2)',
     position: 'vertical',
   },
   {
-    url: '/../public/images/kissman/bathrooms/04.jpg',
-    alt: 'Bathroom #5: Private full bathroom for Bedroom #6 (view 2/2)',
+    url: '/images/kissman/bathrooms/05.jpg',
+    alt: 'Bathroom #4 Full bathroom (basement)',
     position: 'vertical',
   },
   {
-    url: '/../public/images/kissman/bathrooms/05.jpg',
-    alt: 'Bathroom #4 Full bathroom (basement)',
+    url: '/images/kissman/bathrooms/04.jpg',
+    alt: 'Bathroom #5: Private full bathroom for Bedroom #6 (view 2/2)',
     position: 'vertical',
   },
 ]
