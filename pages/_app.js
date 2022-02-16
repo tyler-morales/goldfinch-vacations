@@ -1,5 +1,9 @@
+import splitbee from '@splitbee/web'
 import '../styles/globals.css'
+
 import Nav from '../components/Nav'
+
+splitbee.init()
 
 function MyApp({Component, pageProps}) {
   return (

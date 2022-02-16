@@ -17,6 +17,7 @@ export default function Hero() {
         {/* <span className="block text-sm text-center">Visit</span> */}
         <div className="flex items-center justify-center gap-4 mt-16">
           <a
+            data-splitbee-event="Open AirBnb"
             href="https://www.airbnb.com/rooms/48884474?preview_for_ml=true&source_impression_id=p3_1644869232_F11AuBXqNcFC5inH"
             rel="noreferrer"
             target="_blank"
@@ -25,6 +26,7 @@ export default function Hero() {
           </a>
           <span className="dark:text-gray">Or</span>
           <a
+            data-splitbee-event="Open Vrbo"
             href="https://www.vrbo.com/2586981?unitId=3157337"
             rel="noreferrer"
             target="_blank"
