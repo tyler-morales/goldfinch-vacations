@@ -32,7 +32,7 @@ export default function Home() {
         <meta property="og:url" content="https://goldfinchvacations.com /" />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/tyler-morales/portfolio-v5/main/public/images/og.png"
+          content="https://raw.githubusercontent.com/tyler-morales/goldfinch-vacations/main/public/images/image-card.png"
         />
         <meta property="og:type" content="website" />
       </Head>
