@@ -2,7 +2,8 @@
 import axios from 'axios'
 
 export default async (req, res) => {
-  const {email} = req.body
+  const {firstName, lastName, email} = req.body
+  console.log(req.body)
 
   if (!email || !email.length) {
     return res.status(400).json({error: 'Email is required'})
@@ -15,6 +16,10 @@ export default async (req, res) => {
   const url = `https://${API_SERVER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`
 
   const data = {
+    merge_fields: {
+      FNAME: firstName,
+      LNAME: lastName,
+    },
     email_address: email,
     status: 'subscribed',
   }

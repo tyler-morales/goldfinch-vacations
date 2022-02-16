@@ -1,7 +1,33 @@
-import React from 'react'
+import {useState} from 'react'
+import axios from 'axios'
 import Layout from '../components/Layout'
 
-export default function newsletter() {
+export default function Newsletter() {
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [email, setEmail] = useState('')
+  const [success, setSuccess] = useState('')
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    try {
+      const response = await axios.post('/api/newsletter', {
+        firstName,
+        lastName,
+        email,
+      })
+
+      console.log('Success')
+      setSuccess(true)
+      setFirstName('')
+      setLastName('')
+      setEmail('')
+    } catch (e) {
+      console.error('Error', e)
+    }
+  }
+
   return (
     <Layout>
       <section className="mt-24 ">
@@ -27,7 +53,9 @@ export default function newsletter() {
               </li>
             </ul>
           </div>
-          <form className="flex flex-col justify-center gap-8">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col justify-center gap-8">
             <div className="flex flex-col gap-2">
               <label className="text-sm dark:text-white" htmlFor="firstName">
                 First Name
@@ -37,6 +65,7 @@ export default function newsletter() {
                 type="text"
                 name="firstName"
                 placeholder="First Name"
+                onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -48,6 +77,7 @@ export default function newsletter() {
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
+                onChange={(e) => setLastName(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -55,15 +85,22 @@ export default function newsletter() {
                 Email
               </label>
               <input
+                required
                 className="p-4 rounded-md"
                 type="email"
                 name="email"
                 placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <button className="w-full p-3 font-bold transition-all rounded-md shadow-md hover:-translate-y-1 md:text-lg bg-secondary">
               Join Newsletter
             </button>
+            {success && (
+              <div className="mt-4 text-center text-green">
+                🎉 Success! Thanks for signing up!
+              </div>
+            )}
           </form>
         </div>
       </section>
